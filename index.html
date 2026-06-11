@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><title>FileOrganizer</title><link rel="stylesheet" href="styles/main.css"/></head>
+<body><div id="app">
+  <header class="topbar"><span class="logo">📁 FileOrganizer</span>
+    <div class="controls"><input id="filter-input" placeholder="Filter files…"/></div>
+  </header>
+  <div class="main">
+    <div id="drop-zone" class="drop-zone">
+      <div class="drop-icon">📂</div>
+      <div class="drop-text">Drop files here or click to select</div>
+      <input type="file" id="file-input" multiple style="display:none"/>
+    </div>
+    <div class="stats-row">
+      <div class="stat-card"><div class="stat-val" id="stat-count">0</div><div class="stat-lbl">Files</div></div>
+      <div class="stat-card"><div class="stat-val" id="stat-size">0 B</div><div class="stat-lbl">Total Size</div></div>
+      <div class="stat-card"><div class="stat-val" id="stat-cats">0</div><div class="stat-lbl">Categories</div></div>
+      <div class="stat-card"><div class="stat-val" id="dupe-count">0</div><div class="stat-lbl">Duplicates</div></div>
+    </div>
+    <div id="cat-breakdown" class="cat-breakdown"></div>
+    <div id="file-grid" class="file-grid"></div>
+    <div class="side-panels">
+      <div class="panel"><div class="panel-header">⚠ Duplicates</div><div id="dupe-list"></div></div>
+      <div class="panel"><div class="panel-header">📦 Large Files <label style="font-size:11px;font-weight:400;margin-left:8px">>&nbsp;<input type="number" id="large-threshold" value="10" style="width:40px"/>MB</label></div><div id="large-list"></div></div>
+    </div>
+  </div>
+</div>
+<script src="src/organizer.js"></script><script src="src/app.js"></script></body></html>
