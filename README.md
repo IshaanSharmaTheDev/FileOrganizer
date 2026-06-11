@@ -1,3 +1,7 @@
+## 🚀 Live Demo: [FileOrganizer](https://ishaansharmathedev.github.io/FileOrganizer/)
+
+> Try it in your browser: **[https://ishaansharmathedev.github.io/FileOrganizer/](https://ishaansharmathedev.github.io/FileOrganizer/)**
+
 # FileOrganizer
 
 A browser-based file organizer that categorizes, finds duplicates, and surfaces large files — all client-side.
